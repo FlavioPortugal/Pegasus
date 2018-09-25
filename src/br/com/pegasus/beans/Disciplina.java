@@ -2,7 +2,7 @@ package br.com.pegasus.beans;
 
 public class Disciplina {
 
-	private int codigoDisciplina;
+	private int codigo;
 	private String nome;
 	
 	
@@ -10,17 +10,17 @@ public class Disciplina {
 		super();
 	}
 	
-	public Disciplina(int codigoDisciplina, String nome) {
+	public Disciplina(int codigo, String nome) {
 		super();
-		this.codigoDisciplina = codigoDisciplina;
+		this.codigo = codigo;
 		this.nome = nome;
 	}
 
 	public int getCodigoDisciplina() {
-		return codigoDisciplina;
+		return codigo;
 	}
-	public void setCodigoDisciplina(int codigoDisciplina) {
-		this.codigoDisciplina = codigoDisciplina;
+	public void setCodigoDisciplina(int codigo) {
+		this.codigo = codigo;
 	}
 	public String getNome() {
 		return nome;
