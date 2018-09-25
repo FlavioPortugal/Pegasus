@@ -1,38 +1,47 @@
-*{
-  background-color: rgb(48, 118, 177);
-  font-family: sans-serif;
+* {
   font-size: 120%;
   color: white;
   font-family: monospace;
 }
 
-.logo{
-  margin-top: 160px;
-  width: 48%;
-  float: left;
+html {
+  background-image: url("Imagens/background-image.jpeg");
+  
+  background-size: cover;
 }
 
-.login{
+body{
+  background-color: transparent !important;
+}
+
+.logo {
+  width: 15%;
+  float: right;
+  background: transparent;
+}
+
+.login {
   width: 48%;
   float: right;
   margin-top: 200px;
+  background: transparent;
 }
 
-#idLogo{
+#idLogo {
   width: 100%;
   height: 100%;
+  background: transparent;
 }
 
-input{
-  border-bottom: solid white 2px;
-  border-top: hidden;
-  border-left: hidden;
-  border-right: hidden;
+input {
+  border: 2px solid rgb(48, 118, 177) !important;
   margin-top: 30px;
+  border-radius: 0px !important;
+  background: white !important;
 }
 
-::placeholder{
-  color: white;
+::placeholder {
+  color: rgb(48, 118, 177) !important;
   opacity: .65;
 }
 
@@ -47,7 +56,7 @@ input{
   text-decoration: none;
 }*/
 
-#Bio{
+#Bio {
   margin-left: 55px;
   border: solid white 2px;
   border-radius: 30px;
@@ -59,67 +68,129 @@ input{
   visibility: hidden;
 }
 
-#idBio{
+#headerDiv {
+  background-color: rgba(23,97,160,.8);
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  height: 90px;
+}
+
+#idBio {
   width: 35px;
   padding-right: 15px;
 }
 
-#socialmedias{
-margin-top: 100px;
-margin-left: 10px;
+form {
+  background: transparent;
+  margin: 0 auto;
+}
+
+#socialmedias {
+  margin-top: 110px;
+  margin-left: 10px;
   float: left;
   width: 40%;
+  background: transparent;
 }
 
-#insta{
+#insta {
   width: 45px;
+  background: transparent;
 }
 
-#li{
+#li {
   width: 45px;
+  background: transparent;
 }
 
-#twitter{
+#twitter {
   width: 45px;
+  background: transparent;
 }
 
-#facebook{
+#facebook {
   width: 45px;
+  background: transparent;
 }
 
-.links{
-  text-align: right;
+.links {
+  text-align: left;
   font-size: 90%;
   width: 45%;
-  float: right;
-  margin-top: 10px;
+  float: left;
+  /*margin-top: -180px;*/
   margin-right: 20px;
+  margin-left: 20px;
+  background: transparent;
+  background: transparent;
+}
+
+.formLogin {
+  margin-left: 35%;
+  width: 50%;
 }
 
 #login {
   color: white;
+  border: 2px solid rgb(48, 118, 177) !important;
+  background-color: rgb(48, 118, 177);
+  width: 60%;
+  text-align: center;
+  text-decoration: none;
+  padding-top: -50px;
+  padding-bottom: -5px;
+  margin: 0 auto;
 }
 
-#e-mail, #password{
+.inputLogin {
+  background: transparent;
+  padding-top: 10px;
+}
+
+#formUser {
+  background: transparent;
+  margin-top: 200px;
+}
+
+#e-mail {
+  text-align: center;
   width: 60%;
+  background: transparent;
+  font-style: white;
+  margin-bottom: 10px !important;
+}
+
+#password {
+  text-align: center;
+  margin-top: -8%;
+  width: 60%;
+  background: transparent;
+  font-style: white;
 }
 
 #home {
-  width: 11%;
+  width: 15%;
   color: white;
+  background: transparent;
+  border: none;
+  margin-top: 25px;
 }
 
 #aboutus {
   width: 22%;
   color: white;
+  background: transparent;
+  border: none;
+  margin-top: 25px;
 }
 
-.links a{
+.links a {
   text-decoration: none;
   padding-right: 15px;
 }
 
-.links a:hover{
+.links a:hover {
   text-decoration: underline;
 }
 
