@@ -27,7 +27,7 @@
 
 
 		<div class="logo">
-			<img src="Imagens/logo.png" alt="Logo" id="logo-pegasus">
+			<img src="Imagens/logoBackless.png" alt="Logo" id="logo-pegasus">
 		</div>
 
 		<div class="professor">
@@ -113,31 +113,33 @@
 			</article>
 		</div>
 		<div id="ellieChat" class="tab-pane fade">
-			<br>
-			<div class="e1">
-				<p>Matéria</p>
-				<select class="subject" name="subject">
-					<option value="Web Development" checked="selected">Gestão de Projetos</option>
-					<option value="Mobile Development">Mobile Development</option>
-					<option value="Gestao de Projetos">Web Development</option>
-				</select>
-				<div>
-					<input type="text" name="topico" placeholder="Tópico" class="el_input" />
+			<form>
+				<br>
+				<div class="e1">
+					<p>Matéria</p>
+					<select class="subject" name="subject">
+						<option value="Web Development" checked="selected">Gestão de Projetos</option>
+						<option value="Mobile Development">Mobile Development</option>
+						<option value="Gestao de Projetos">Web Development</option>
+					</select>
+					<div>
+						<input type="text" name="topico" placeholder="Tópico" class="el_input" />
+					</div>
+					<div>
+						<input type="text" name="topico" placeholder="Subtópico" class="el_input" />
+					</div>
+					<div>
+						<input type="text" name="topico" placeholder="Palavras chave" class="el_input" />
+					</div>
+					<div class="send">
+						<button type="input" name="enviar" id="eli_send">Enviar</button>
+					</div>
 				</div>
-				<div>
-					<input type="text" name="topico" placeholder="Subtópico" class="el_input" />
+				<div class="e2">
+					<p>Conteúdo</p>
+					<textarea name="conteudo" id="dialogContent" rows="12" cols="60"></textarea>
 				</div>
-				<div>
-					<input type="text" name="topico" placeholder="Palavras chave" class="el_input" />
-				</div>
-				<div class="send">
-					<button type="input" name="enviar" id="eli_send">Enviar</button>
-				</div>
-			</div>
-			<div class="e2">
-				<p>Conteúdo</p>
-				<textarea name="conteudo" id="dialogContent" rows="12" cols="60"></textarea>
-			</div>
+			</form>
 		</div>
 		<div id="configuracoes" class="tab-pane fade">
 			<br>
@@ -155,23 +157,24 @@
 								<input type="text" name="Telefone" class="updatePersonalInfo" placeholder="Telefone" required />
 							</td>
 						</tr>
+					</table>
 				</div>
 				<div>
-					<td>
-						<div id="changePass">
-							<p id="idNascimento">Trocar senha </p>
-							<input name="NewPass" class="updatePersonalInfo" placeholder="Senha Atual" />
+					<table>
+						<tr>
+							<div id="changePass">
+								<p id="idNascimento">Trocar senha </p>
+								<input name="NewPass" class="updatePersonalInfo" placeholder="Senha Atual" />
+								<br>
+								<input name="NewPass" class="updatePersonalInfo" placeholder="Nova Senha" />
+								<br>
+								<input name="NewPass" class="updatePersonalInfo" placeholder="Repita a Senha" />
+							</div>
 							<br>
-							<input name="NewPass" class="updatePersonalInfo" placeholder="Nova Senha" />
-							<br>
-							<input name="NewPass" class="updatePersonalInfo" placeholder="Repita a Senha" />
-						</div>
-						<br>
-						<button id="sendPersonalInfo" type="submit">Enviar</button>
-					</td>
-					</tr>
+							<button id="sendPersonalInfo" type="submit">Enviar</button>
+						</tr>
+					</table>
 				</div>
-				</table>
 			</article>
 		</div>
 	</div>
