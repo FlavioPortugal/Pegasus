@@ -332,7 +332,7 @@ th {
     font-weight: 400;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .glyphicon-asterisk:before {
@@ -1995,8 +1995,7 @@ pre code {
 .container {
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto
+    margin-right: 20px;
 }
 
 @media (min-width:768px) {
@@ -4995,7 +4994,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav>li>a:focus,
 .nav>li>a:hover {
     text-decoration: none;
-    background-color: #eee
+    background-color: white;
 }
 
 .nav>li.disabled>a {
@@ -5029,7 +5028,9 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .nav-tabs {
-    border-bottom: 1px solid #ddd
+    border-bottom: 1px solid white;
+    width: 98%;
+    margin: auto;
 }
 
 .nav-tabs>li {
@@ -5048,7 +5049,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .nav-tabs>li>a:hover {
-    border-color: #eee #eee #ddd
+    border-color: white;
 }
 
 .nav-tabs>li.active>a,
@@ -5057,8 +5058,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
     color: #555;
     cursor: default;
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-bottom-color: transparent
+    border: 1px solid white;
+    border-bottom-color: transparent;
 }
 
 .nav-tabs.nav-justified {
@@ -5198,6 +5199,13 @@ textarea.input-group-sm>.input-group-btn>.btn {
     .nav-tabs-justified>.active>a:hover {
         border-bottom-color: #fff
     }
+}
+
+.tab-content{
+    height: 1000px;
+    width: 98%;
+    margin: auto;
+    background-color: white;
 }
 
 .tab-content>.tab-pane {

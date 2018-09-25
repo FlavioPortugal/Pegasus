@@ -2,6 +2,9 @@
 <html>
 
 <head>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link href="bootstrap-tour-0.12.0/build/css/bootstrap.min.css" rel="stylesheet">
 	<link href="bootstrap-tour-0.12.0/build/css/bootstrap-tour.min.css" rel="stylesheet">
@@ -39,7 +42,6 @@
 	</header>
 
 	<ul class="nav nav-tabs">
-		<li class="nav active"><a data-toggle="tab active" href="#home">Home</a></li>
 		<li><a data-toggle="tab" href="#materias">Matérias</a></li>
 		<li><a data-toggle="tab" href="#avisos">Avisos</a></li>
 		<li><a data-toggle="tab" href="#ellieChat">Ellie</a></li>
@@ -72,7 +74,7 @@
 				<table class="tableWarning">
 					<tr>
 						<div class="aviso">
-							<th><img src="Imagens/profa.png" alt="profIcon" id="prof-icon"></th>
+							<th><img src="Imagens/profa.png" alt="profIcon" class="prof-icon"></th>
 							<th id="aviso"> Entrega de Prova
 								Semestral </th>
 							<div class="data">18/05/2018</div>
@@ -86,7 +88,7 @@
 					<tr>
 
 						<div class="aviso">
-							<th><img src="Imagens/prof.png" alt="profIcon" id="prof-icon"></th>
+							<th><img src="Imagens/prof.png" alt="profIcon" class="prof-icon"></th>
 							<th id="aviso"> Conteúdo da Matéria __________ </th>
 							<div class="data">20/05/2018</div>
 						</div>
@@ -100,7 +102,7 @@
 					<tr>
 
 						<div class="aviso">
-							<th><img src="Imagens/dire.png" alt="profIcon" id="prof-icon"></th>
+							<th><img src="Imagens/dire.png" alt="profIcon" class="prof-icon"></th>
 							<th id="aviso"> Encontro de Diretores e Professores </th>
 							<div class="data">24/05/2018</div>
 					</tr>
@@ -120,13 +122,13 @@
 					<option value="Gestao de Projetos">Web Development</option>
 				</select>
 				<div>
-					<input type="text" name="topico" placeholder="Tópico" id="el_input" />
+					<input type="text" name="topico" placeholder="Tópico" class="el_input" />
 				</div>
 				<div>
-					<input type="text" name="topico" placeholder="Subtópico" id="el_input" />
+					<input type="text" name="topico" placeholder="Subtópico" class="el_input" />
 				</div>
 				<div>
-					<input type="text" name="topico" placeholder="Palavras chave" id="el_input" />
+					<input type="text" name="topico" placeholder="Palavras chave" class="el_input" />
 				</div>
 				<div class="send">
 					<button type="input" name="enviar" id="eli_send">Enviar</button>
@@ -140,9 +142,9 @@
 		<div id="configuracoes" class="tab-pane fade">
 			<br>
 			<article>
-				<p id="personalDetails">Dados Pessoais</p>
-				<table>
-					<div id="e1">
+				<div class="personalData">
+					<p id="personalDetails">Dados Pessoais</p>
+					<table>
 						<tr>
 							<td>
 								<input type="text" name="E-mail" class="updatePersonalInfo" placeholder="E-mail" required />
@@ -152,26 +154,28 @@
 							<td>
 								<input type="text" name="Telefone" class="updatePersonalInfo" placeholder="Telefone" required />
 							</td>
-						<tr>
-					</div>
-					<div id="e2">
 						</tr>
-						<td>
-							<p id="idNascimento">Trocar senha: </p>
-							<input name="NewPass" class="updatePersonalInfo" placeholder="Senha Atual" required />
+				</div>
+				<div>
+					<td>
+						<div id="changePass">
+							<p id="idNascimento">Trocar senha </p>
+							<input name="NewPass" class="updatePersonalInfo" placeholder="Senha Atual" />
 							<br>
-							<input name="NewPass" class="updatePersonalInfo" placeholder="Nova Senha" required />
+							<input name="NewPass" class="updatePersonalInfo" placeholder="Nova Senha" />
 							<br>
-							<input name="NewPass" class="updatePersonalInfo" placeholder="Repita a Senha" required />
-							<br>
-							<button id="sendPersonalInfo" type="submit">Enviar</button>
-						</td>
-						</tr>
-					</div>
+							<input name="NewPass" class="updatePersonalInfo" placeholder="Repita a Senha" />
+						</div>
+						<br>
+						<button id="sendPersonalInfo" type="submit">Enviar</button>
+					</td>
+					</tr>
+				</div>
 				</table>
 			</article>
 		</div>
 	</div>
+
 	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="jquery.min.js"></script>
