@@ -14,7 +14,7 @@ public class Aluno extends Usuario { // extends Usuario (?)
 
 		public Aluno(Usuario usuario, Turma turma, String numeroMatricula, String dataMatricula, int nivelAcesso) {
 			super();
-			this.usuario = usuario; // Removi o espaco
+			this.usuario = usuario;
 			this.turma = turma;
 			this.numeroMatricula = numeroMatricula;
 			this.dataMatricula = dataMatricula;
