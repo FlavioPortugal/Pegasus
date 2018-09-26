@@ -36,7 +36,22 @@ public class Login extends HttpServlet{
 					writer.println("<p>login incorreto</p>");
 				}
 				else {
-					writer.println("<p>login efetuado com sucesso</p>");
+					if(usuarios.getNivelAcesso() == 1) {
+											   
+						resp.sendRedirect("url");
+					    return;
+					}
+					else if(usuarios.getNivelAcesso() == 2) {
+						resp.sendRedirect("url");
+					    return;
+					}
+					else if(usuarios.getNivelAcesso() == 3) {
+						resp.sendRedirect("url");
+					    return;
+					}
+					else {
+						writer.println("<p>Usuario não possui nível de acesso</p>");
+					}
 				}
 				writer.println("</body></html>");
 				

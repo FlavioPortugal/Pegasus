@@ -10,14 +10,15 @@ public class Usuario {
 		private String telefone;
 		private String sexo;
 		private String login;
-		private String senha;		
+		private String senha;	
+		private int nivelAcesso;
 		
 		public Usuario() {
 			super();
 		}
 
 		public Usuario(int codigo, String nome, String dataNascimento, String email, String endereco, String telefone,
-				String sexo, String login, String senha) {
+				String sexo, String login, String senha, int nivelAcesso) {
 			super();
 			this.codigo = codigo;
 			this.nome = nome;
@@ -27,7 +28,8 @@ public class Usuario {
 			this.telefone = telefone;
 			this.sexo = sexo;
 			this.login = login;
-			this.senha = senha;			
+			this.senha = senha;
+			this.nivelAcesso = nivelAcesso;
 		}
 
 		public int getCodigo() {
@@ -100,6 +102,16 @@ public class Usuario {
 
 		public void setSenha(String senha) {
 			this.senha = senha;
-		}		
+		}
+
+		public int getNivelAcesso() {
+			return nivelAcesso;
+		}
+
+		public void setNivelAcesso(int nivelAcesso) {
+			this.nivelAcesso = nivelAcesso;
+		}
+		
+		
 		
 }
