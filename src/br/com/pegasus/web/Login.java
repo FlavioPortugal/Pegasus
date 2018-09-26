@@ -20,7 +20,7 @@ public class Login extends HttpServlet{
 		try {
 				PrintWriter writer = resp.getWriter();
 				
-				String email = req.getParameter("email");
+				String email = req.getParameter("e-mail");
 				String senha = req.getParameter("senha");
 				
 						
@@ -38,11 +38,11 @@ public class Login extends HttpServlet{
 				else {
 					if(usuarios.getNivelAcesso() == 1) {
 											   
-						resp.sendRedirect("url");
+						resp.sendRedirect("index/");
 					    return;
 					}
 					else if(usuarios.getNivelAcesso() == 2) {
-						resp.sendRedirect("url");
+						resp.sendRedirect("aluno/");
 					    return;
 					}
 					else if(usuarios.getNivelAcesso() == 3) {
