@@ -21,23 +21,23 @@
 </head>
 
 <body>
-	<header>
+	<header id="headerDiv">
 		<button type="button" class="btn btn-secondary btn-sm" id="infos"><a href="login.html" id="logout">Logout</a></button>
 		</a>
-
-
 		<div class="logo">
 			<img src="Imagens/logoBackless.png" alt="Logo" id="logo-pegasus">
 		</div>
+	</header>
+	<br>
+	<div class="professor">
+		<img src="Imagens/Avatar.png" alt="professor" id="picAluno">
+	</div>
 
-		<div class="professor">
-			<img src="Imagens/Avatar.png" alt="professor" id="picProf">
-			<h3 id="profbv">Bem Vindo!</h3>
-		</div>
+	<h3 id="profbv">Bem Vindo, Professor.</h3>
 
-		<div class="ellie">
-			<a href="#"><img src="Imagens/Ellie.png" alt="ellie" id="tutorial"></a>
-		</div>
+	<div class="ellie">
+		<a href="#"><img src="Imagens/Ellie.png" alt="ellie" id="tutorial"></a>
+	</div>
 
 	</header>
 
@@ -62,7 +62,7 @@
 						<tr>
 							<td id="dm">Densevolvimento Mobile</td>
 							<td id="wd">Web Development</td>
-							<td id="gp">Gestao de Projetos</td>
+							<td id="gp">Design de Software</td>
 						</tr>
 					</tbody>
 				</table>
@@ -135,48 +135,50 @@
 						<button type="input" name="enviar" id="eli_send">Enviar</button>
 					</div>
 				</div>
-				<div class="e2">
+				<div class="e2" id="contentText">
 					<p>Conteúdo</p>
 					<textarea name="conteudo" id="dialogContent" rows="12" cols="60"></textarea>
 				</div>
 			</form>
 		</div>
 		<div id="configuracoes" class="tab-pane fade">
-			<br>
-			<article>
-				<div class="personalData">
-					<p id="personalDetails">Dados Pessoais</p>
-					<table>
-						<tr>
-							<td>
-								<input type="text" name="E-mail" class="updatePersonalInfo" placeholder="E-mail" required />
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<input type="text" name="Telefone" class="updatePersonalInfo" placeholder="Telefone" required />
-							</td>
-						</tr>
-					</table>
-				</div>
-				<div>
-					<table>
-						<tr>
-							<div id="changePass">
-								<p id="idNascimento">Trocar senha </p>
-								<input name="NewPass" class="updatePersonalInfo" placeholder="Senha Atual" />
+			<form>
+				<br>
+				<article>
+					<div class="personalData">
+						<p id="personalDetails">Dados Pessoais</p>
+						<table>
+							<tr>
+								<td>
+									<input type="text" name="E-mail" class="updatePersonalInfo" placeholder="E-mail" required />
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="text" name="Telefone" class="updatePersonalInfo" placeholder="Telefone" required />
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div>
+						<table>
+							<tr>
+								<div id="changePass">
+									<p id="idNascimento">Trocar senha </p>
+									<input name="NewPass" class="updatePersonalInfo" placeholder="Senha Atual" />
+									<br>
+									<input name="NewPass" class="updatePersonalInfo" placeholder="Nova Senha" />
+									<br>
+									<input name="NewPass" class="updatePersonalInfo" placeholder="Repita a Senha" />
+								</div>
 								<br>
-								<input name="NewPass" class="updatePersonalInfo" placeholder="Nova Senha" />
-								<br>
-								<input name="NewPass" class="updatePersonalInfo" placeholder="Repita a Senha" />
-							</div>
-							<br>
-							<button id="sendPersonalInfo" type="submit">Enviar</button>
-						</tr>
-					</table>
-				</div>
-			</article>
+								<button id="sendPersonalInfo" type="submit">Enviar</button>
+			</form>
+			</tr>
+			</table>
 		</div>
+		</article>
+	</div>
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
