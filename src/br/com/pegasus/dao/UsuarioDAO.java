@@ -16,20 +16,20 @@ public class UsuarioDAO {
 	public UsuarioDAO() throws Exception {
 		con = Conexao.conectar();
 	}
-
-	public String gravar(Usuario usuario) throws Exception {
-		stmt = con.prepareStatement("INSERT INTO T_PEG_USUARIO (CD_USUARIO , NM_USUARIO, DT_NASCIMENTO, DS_EMAIL, DS_ENDERECO, NR_TELEFONE , DS_SEXO , NR_LOGIN , DS_SENHA) VALUES (? , ? , ?, ?, ? , ?, ?, ? , ?)");
-		stmt.setInt(1, usuario.getCodigo());
-		stmt.setString(2, usuario.getNome());
-		stmt.setString(3, usuario.getDataNascimento());
-		stmt.setString(4, usuario.getEmail());
-		stmt.setString(5, usuario.getEndereco());
-		stmt.setString(6, usuario.getTelefone());
-		stmt.setString(7, usuario.getSexo());
-		stmt.setString(8, usuario.getLogin());
-		stmt.setString(9, usuario.getSenha());		
-		stmt.executeUpdate(); // Execute returns a boolean value. Usually recommended to use ExecuteUpdate, which returns an int value.
-		return "Cadastrado com sucesso!";
+	
+	public Usuario consultarLogin(String login, String senha) throws Exception {
+		Usuario user = new Usuario();
+		stmt = con.prepareStatement(
+				"SELECT NR_LOGIN , DS_SENHA , NR_NIVEL_ACESSO FROM T_PEG_USUARIO "
+				+ "WHERE NR_LOGIN = ? AND DS_SENHA = ?");
+		stmt.setString(1, login);
+		stmt.setString(2, senha);
+		rs = stmt.executeQuery();
+		if (rs.next()) {
+			user.setLogin(rs.getString("NR_LOGIN"));
+			user.setSenha(rs.getString("DS_SENHA"));
+		}
+		return user;
 	}
 	
 	public Usuario consultarPorNumero(int codigo) throws Exception {
