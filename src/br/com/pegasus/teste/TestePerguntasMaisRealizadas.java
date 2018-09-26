@@ -16,12 +16,12 @@ public class TestePerguntasMaisRealizadas {
 		try {
 			UsuarioDAO dao = new UsuarioDAO();
 			List<Usuario> clientes = new ArrayList<Usuario>();
-			clientes = dao.consultarPorNome(JOptionPane.showInputDialog("Digite o nome"));
-			for (Cliente cli : clientes) {
-				System.out.println("Nome.....: " + cli.getNome());
-				System.out.println("Número...: " + cli.getNumero());
-				System.out.println("Estrelas.: " + cli.getQtdeEstrelas());
-			}
+			//clientes = dao.consultarPorNome(JOptionPane.showInputDialog("Digite o nome"));
+			//for (Cliente cli : clientes) {
+			//	System.out.println("Nome.....: " + cli.getNome());
+			//	System.out.println("Número...: " + cli.getNumero());
+			//	System.out.println("Estrelas.: " + cli.getQtdeEstrelas());
+			//}
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println(Excecao.tratarExcecao(e));

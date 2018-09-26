@@ -3,8 +3,7 @@
     "description": "Quick and easy way to build your product tours with Bootstrap Popovers.",
     "type":"component",
     "url":"https://github.com/sorich87/bootstrap-tour.git",
-    "homepage": "http://bootstraptour.com/",
-    "description": "Show people how to use your web site",
+    "homepage": "http://bootstraptour.com/", 
     "keywords": [
         "bootstrap",
         "tour"
