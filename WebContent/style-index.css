@@ -18,6 +18,87 @@ body {
   height: 90px;
 }
 
+.chat {
+  border-radius: 5px;
+  box-shadow: 0 0 6px #B2B2B2;
+  display: inline-block;
+  padding: 10px 18px;
+  position: relative;
+  vertical-align: top;
+}
+
+.bot {
+  background: #3395d6;
+  color: white;
+  float: left;
+  margin: 5px 20px 5px 45px;
+}
+
+.bot:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-color: #3395d6;
+  border-left: 0;
+  border-top: 0;
+  margin-top: -10px;
+  margin-left: -20px;
+}
+
+.me {
+  background: #EEE7E0;
+  color: black;
+  float: right;
+  margin: 5px 45px 5px 20px;
+}
+
+.me:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-left-color: #EEE7E0;
+  border-right: 0;
+  border-top: 0;
+  margin-top: -10px;
+  margin-right: -20px;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  font-family: helvetica;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+
+.pulse {
+  width: 100%;
+  height: 300px;
+  background: #fff;
+  color: #262626;
+  font-size: 14px;
+  font-family: verdana;
+  overflow-y: scroll;
+}
+
+
+#headerDiv {
+  background-color: rgba(23, 97, 160, .8);
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  height: 90px;
+}
+
 .col-md-2,
 .col-md-10 {
   padding: 0;
@@ -31,7 +112,6 @@ body {
   bottom: 0;
   position: fixed;
   float: right;
-  margin-left: 10px;
 }
 
 .chat-window>div>.panel {
@@ -47,6 +127,7 @@ body {
   margin: 0;
   padding: 0 10px 10px;
   max-height: 300px;
+  overflow-x: hidden;
 }
 
 .top-bar {
@@ -54,6 +135,37 @@ body {
   color: white;
   padding: 10px;
   position: relative;
+  overflow: hidden;
+}
+
+#question {
+  margin-right: 70px;
+}
+
+#sendQuestion {
+  margin-left: -70px;
+  display: block;
+  background: rgb(47, 82, 143);
+  font-size: 16px;
+  color: #fff;
+  padding: 0px 10px 0px 10px;
+  border: 0;
+  border-bottom: 2px #54504C solid;
+  border-radius: 3px;
+  position: relative;
+  left: 40%;
+  text-shadow: 0.05em 0.05em rgb(47, 82, 143);
+}
+
+#ellieOnChat {
+  width: 18%;
+  margin-left: -15px;
+  margin-right: 15px;
+  float: left;
+}
+
+#ellieTitle {
+  padding-top: 4px;
 }
 
 .msg_receive {
@@ -86,6 +198,7 @@ body {
 
 .msg_container {
   padding: 10px;
+  overflow: hidden;
   display: flex;
 }
 
@@ -748,23 +861,4 @@ select:hover {
   font-size: 20px;
   height: 500px;
   ;
-}
-
-#sendQuestion {
-  display: block;
-  background: #86817C;
-  font-size: 16px;
-  color: #fff;
-  padding: 10px 20px;
-  border: 0;
-  border-bottom: 2px #54504C solid;
-  border-radius: 3px;
-  position: relative;
-  left: 40%;
-  text-shadow: 0.05em 0.05em black;
-}
-
-#sendQuestion:hover {
-  background: #54504C;
-  cursor: pointer;
 }
