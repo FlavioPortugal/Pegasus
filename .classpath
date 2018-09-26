@@ -8,5 +8,18 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="WebContent/lib/commons-lang3-3.5.jar"/>
+	<classpathentry kind="lib" path="WebContent/lib/conversation-6.3.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/lib/core-6.3.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/lib/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="WebContent/lib/javax.servlet.jsp.jstl-1.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/lib/javax.servlet.jsp.jstl-api-1.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/lib/jersey-jsr166e-2.25.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/lib/logging-interceptor-3.8.0.jar"/>
+	<classpathentry kind="lib" path="WebContent/lib/okhttp-3.8.0.jar"/>
+	<classpathentry kind="lib" path="WebContent/lib/okhttp-urlconnection-3.8.0.jar"/>
+	<classpathentry kind="lib" path="WebContent/lib/okio-1.13.0.jar"/>
+	<classpathentry kind="lib" path="WebContent/lib/servlet-api.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.5"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
