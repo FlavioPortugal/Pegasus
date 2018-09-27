@@ -38,7 +38,7 @@
 	<h3 id="profbv">Bem Vindo, Professor.</h3>
 
 	<div class="ellie">
-		<a href="#"><img src="Imagens/Ellie.png" alt="ellie" id="tutorial"></a>
+		<a href="ellie.jsp"><img src="Imagens/Ellie.png" alt="ellie" id="tutorial"></a>
 	</div>
 
 	</header>
