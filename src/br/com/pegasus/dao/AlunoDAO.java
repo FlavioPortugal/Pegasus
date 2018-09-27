@@ -25,8 +25,7 @@ public class AlunoDAO {
 		stmt.setString(1, codigo);		
 		rs = stmt.executeQuery();
 		if (rs.next()) {
-			user.setLogin(rs.getString("NR_LOGIN"));
-			user.setSenha(rs.getString("DS_SENHA"));
+			user.setCodigo(rs.getInt("CD_CODIGO"));
 		}
 		return user;
 	}
