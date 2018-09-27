@@ -25,7 +25,7 @@ public class AlunoDAO {
 		stmt.setString(1, codigo);		
 		rs = stmt.executeQuery();
 		if (rs.next()) {
-			user.setCodigo(rs.getInt("CD_CODIGO"));
+			user.setCodigo(rs.getInt("CD_ALUNO"));
 		}
 		return user;
 	}
