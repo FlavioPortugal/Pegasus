@@ -17,7 +17,7 @@
 		</div>
 	<div class="center">
 		
-		<!--    <h2>Chabot Example w/ Watson and JSP</h2> -->
+		<!-- <h2>Chabot Example w/ Watson and JSP</h2> -->
 		
 		<div id="textchat" class="pulse"></div>
 		<form method="post">
